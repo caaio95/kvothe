@@ -1,0 +1,31 @@
+1) Baixar "64-bit Git for Windows Portable"
+   https://git-scm.com/download/win
+
+2) Ao executar o arquivo, ele se auto extrairá para a pasta "PortableGit"
+
+3) Entre na pasta e execute "git bash"
+
+4) No Prompt configure o proxy:
+
+$ git config --global http.proxy http://webproxy:3128
+
+--------------------------------------------------------------------------
+Comandos para "clonar" (trazer repositórios do Github)
+
+1) Na mesma pasta do PortableGit, criar uma pasta com um nome qualquer (ex: projetos ou exercicios)
+
+2) no prompt, entrar na pasta com o comando: cd <Minha Pasta>
+
+3) Para "linkar" a pasta local com o repositório remoto, use o comando:
+
+$ git clone http://github.com/<seu user git>/<nome repositorio git>.git
+
+-------------------------------------------------------------------------
+Comandos para manipular arquivos versionados:
+
+$git add <arquivo(s)>  //indica que você quer adicionar um determinado arquivo ou vários (*) ao repositório
+
+$git commit -m "Mensagem indicando o motivo da alteração" //todos os arquivos adicionados e/ou alterados vão ser enviados ao repositório local
+
+$git push origin master //será solicitado seu usuário e senha do github
+
